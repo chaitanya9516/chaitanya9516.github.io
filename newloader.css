@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #031321;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+text {
+    color: rgb(100, 255, 218);
+}
+
+#container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container #Layer_1 {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container #Layer_1 path {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: transparent;
+    stroke-width: 10;
+    stroke: rgb(100, 255, 218);
+}
+
+#container #Layer_1 path {
+    stroke-dasharray: 1605;
+    stroke-dashoffset: 1605;
+}
+
+#container #Layer_1 path {
+    animation: circle 2s infinite forwards;
+}
+
+@keyframes circle {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    40% {
+        stroke-dashoffset: 401.25;
+        fill: transparent;
+    }
+    80% {
+        stroke-dashoffset: 802.50;
+    }
+    100% {
+        stroke-dashoffset: 1605;
+    }
+}

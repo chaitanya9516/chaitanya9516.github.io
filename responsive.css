@@ -1,0 +1,243 @@
+    @media screen and (max-width:1111px) {
+        div.right {
+            display: none;
+        }
+        div.left {
+            display: none;
+        }
+        .main_proj_details {
+            display: flex;
+            height: 60vh;
+            overflow: -moz-hidden-unscrollable;
+            margin: 20px;
+            padding: 20px;
+        }
+        .about_StyledPic {
+            min-height: 150px;
+        }
+        div .inner {
+            height: 430px;
+        }
+        /* section3 */
+        .main_proj_details {
+            display: flex;
+            height: 60vh;
+        }
+        #project_heading {
+            padding: 280px 0 10px 160px;
+        }
+        .example {
+            display: flex;
+            flex: 1;
+            padding-left: 0px;
+        }
+        .box1 {
+            display: flex;
+            flex: 1;
+            margin-right: 0px;
+            /* height: 320px;
+        width: 420px; */
+            height: 380px;
+            width: 550px;
+            padding-left: 0px;
+        }
+        #projects_img {
+            height: 380px;
+            width: 550px;
+        }
+        .box2 {
+            /* display: grid; */
+            display: flex;
+            flex: 1;
+            /* height: 320px;
+        width: 420px; */
+            height: 380px;
+            width: 550px;
+            margin-left: 0px;
+            background-color: rgb(13 110 253 / 25%);
+        }
+        .project_title {
+            /* top: -95px;
+        right: 150px; */
+            top: -40px;
+            right: 110px;
+            font-size: 22px;
+        }
+    }
+    /* To write media query for specific device use beside one @media screen and (device-width: 761px) { */
+    
+    @media screen and (max-width:768px) {
+        div.right {
+            display: none;
+        }
+        div.left {
+            display: none;
+        }
+        .inner {
+            height: 100vh;
+        }
+        /* section3 */
+        .main_proj_details {
+            display: flex;
+            height: 60vh;
+        }
+        #project_heading {
+            padding: 280px 0 10px 160px;
+        }
+        .example {
+            display: flex;
+            flex: 1;
+            padding-left: 0px;
+        }
+        .box1 {
+            display: flex;
+            flex: 1;
+            margin-right: 0px;
+            /* height: 320px;
+        width: 420px; */
+            height: 380px;
+            width: 550px;
+            padding-left: 0px;
+        }
+        #projects_img {
+            height: 380px;
+            width: 550px;
+        }
+        .box2 {
+            /* display: grid; */
+            display: flex;
+            flex: 1;
+            /* height: 320px;
+        width: 420px; */
+            height: 380px;
+            width: 550px;
+            margin-left: 0px;
+            background-color: rgb(13 110 253 / 25%);
+        }
+        .project_title {
+            /* top: -95px;
+        right: 150px; */
+            top: -40px;
+            right: 110px;
+            font-size: 22px;
+        }
+    }
+    
+    @media screen and (max-width:480px) {
+        div.right {
+            display: none;
+        }
+        div.left {
+            display: none;
+        }
+        .intro {
+            font-size: 18px;
+            padding: 20px 0 0 10px;
+        }
+        .intro_sentence {
+            padding: 40px 0 10px 2px;
+            font-size: none;
+        }
+        .name,
+        .hero,
+        .hero2 {
+            padding: 5px;
+        }
+        h1 {
+            font-size: 8px;
+        }
+        /* section2 */
+        #about_h {
+            font-size: 26px;
+            padding: 120px 0 10px 10px;
+        }
+        .about_me {
+            padding: 0px;
+        }
+        .inner {
+            position: absolute;
+            display: flex;
+            justify-content: centre;
+            padding: 5px;
+        }
+        .about_StyledText {
+            flex: 1;
+            width: 100%;
+            border: 0;
+            font-size: 18px;
+            padding: 0px;
+        }
+        .about_StyledPic {
+            flex: 1;
+            margin: 10%;
+            width: auto;
+            height: 100px;
+            border: 0px;
+            padding: 0px;
+            min-height: 150px;
+        }
+        /* section3 */
+        /* increase the heigth when u add projects in project_sec */
+        .project_sec {
+            padding: 5px;
+            height: 100vh;
+        }
+        .main_proj_details {
+            display: flex;
+            flex: 1;
+            height: 55vh;
+        }
+        #project_heading {
+            font-size: 26px;
+            padding: 1030px 0px 5px 0;
+        }
+        .example {
+            display: flex;
+            flex: 1;
+            padding-left: 0px;
+        }
+        .box1 {
+            display: flex;
+            flex: 1;
+            margin-right: 0px;
+            width: 320px;
+            height: 315px;
+            padding-left: 0px;
+        }
+        #projects_img {
+            width: 320px;
+            height: 315px;
+        }
+        .box2 {
+            /* display: grid; */
+            display: flex;
+            flex: 1;
+            width: 320px;
+            height: 315px;
+            margin-left: 0px;
+            background-color: rgb(13 110 253 / 25%);
+        }
+        .project-tech-list {
+            margin-right: 205px;
+        }
+        .project_title {
+            top: -40px;
+            right: 202px;
+            font-size: 22px;
+        }
+        /* section4 */
+        #about_section {
+            display: flex;
+            padding: 0px;
+            margin: 0px;
+            top: 1500px;
+            height: 100vh;
+        }
+        .div_about {
+            display: flex;
+            flex: 1;
+            padding: 250px;
+            padding: 0px;
+            margin: 0px;
+        }
+    }

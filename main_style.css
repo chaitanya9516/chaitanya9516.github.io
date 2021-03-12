@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Teko', sans-serif;
+    font-family: 'Yusei Magic', sans-serif;
+    background-color: #112240;
+}
+
+
+/* section {
+    padding: 0 100PX;
+    height: 100vh;
+    display: flex;
+} */
+
+.intro {
+    padding: 0px 0 0 60px;
+    font-size: 18px;
+}
+
+.name,
+.hero {
+    font-size: 60px;
+}
+
+.intro_sentence {
+    color: rgb(100, 255, 218);
+    margin: 0px 0px 20px 3px;
+    padding: 100px 0 0 60px;
+    font-size: 15px;
+    color: rgb(100, 255, 218);
+    margin: 0px 0px 20px 3px;
+}
+
+a {
+    stroke: rgb(100, 255, 218);
+    color: inherit;
+    position: relative;
+    cursor: pointer;
+}
+
+.left {
+    float: left;
+    display: block;
+}
+
+ul {
+    list-style-type: none;
+    /* padding-top: 250px; */
+}
+
+ul .social_StyledList .fade-enter-done {
+    padding-top: 80px;
+}
+
+.social_git {
+    padding: 250px 0px 10px 0px;
+}
+
+.git {
+    fill: rgb(100, 255, 218);
+    stroke-width: 10;
+    stroke: rgb(100, 255, 218);
+    /* border-radius: 36px; */
+    /* box-shadow: 0 0 10px #2196f3, 0 0 30px #2196f3, 0 0 30px #2196f3; */
+}
+
+.social_indeed {
+    padding: 0px 0px 10px 0px;
+}
+
+.indeed {
+    fill: rgb(100, 255, 218);
+    stroke-width: 10;
+    stroke: rgb(100, 255, 218);
+    pointer-events: cursor;
+}
+
+.social_insta {
+    padding: 0px 0px 10px 0px;
+}
+
+.insta {
+    fill: rgb(100, 255, 218);
+    stroke-width: 10;
+    stroke: rgb(100, 255, 218);
+    border-radius: 10px;
+}
+
+.social_twitter {
+    padding: 0px 0px 10px 0px;
+}
+
+.twitter {
+    fill: rgb(100, 255, 218);
+    stroke-width: 10;
+    stroke: rgb(100, 255, 218);
+}
+
+.vl_left {
+    border-left: 1px solid rgb(136, 146, 176);
+    display: block;
+    height: 100px;
+    margin: 0 auto;
+    width: 1px;
+}
+
+div.email {
+    margin: 0px;
+    /* padding: 0px; */
+}
+
+.right {
+    float: right;
+    display: flex;
+    min-height: 90vh;
+}
+
+div.right {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+div.left {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.email {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    margin: 20px auto;
+    padding: 180px 30px 0 10px;
+}
+
+.mailid {
+    color: rgb(100, 255, 218);
+    text-decoration: none;
+}
+
+.anchor_email:hover {
+    text-decoration: none;
+}
+
+.vl_right {
+    border-left: 1px solid rgb(136, 146, 176);
+    display: block;
+    height: 100px;
+    margin: 0 auto;
+    width: 1px;
+}
+
+.name {
+    padding-left: 60px;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.hero {
+    padding-left: 60px;
+    color: rgb(204, 214, 246);
+}
+
+.hero2 {
+    padding: 40px 0 0 80px;
+    max-width: 500px;
+}
+
+.button_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.hero3 {
+    flex: 1;
+    text-decoration: none;
+    margin: 10px;
+    border-radius: 3px;
+    padding: 15px 30px;
+    border: 1px solid rgb(100, 255, 218);
+    color: #fff;
+}
+
+.email-link:hover,
+.hero3:hover {
+    text-decoration: none;
+    box-shadow: 0 0 10px #2196f3, 0 0 10px #2196f3, 0 0 10px #2196f3;
+}
+
+.about {
+    border-left: 1px solid rgb(136, 146, 176);
+    height: 80px;
+}
+
+.inner {
+    display: flex;
+    height: 90vh;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about_StyledText {
+    display: flex;
+    width: 60%;
+    /* border: solid 1px #000; */
+    padding-left: 80px;
+    max-width: 500px;
+}
+
+.about_StyledPic {
+    display: flex;
+    width: 40%;
+    /* border: solid 1px #000; */
+    padding-right: 80px;
+}
+
+#about_h {
+    padding: 140px 0 10px 160px;
+}
+
+.about_h2 {
+    padding: 140px 0 10px 80px;
+}
+
+.content {
+    padding: 0px;
+}
+
+.project_sec {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#project_heading {
+    color: rgb(204, 214, 246);
+    padding: 160px 0 10px 160px;
+}
+
+.main_proj_details {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    overflow: -moz-hidden-unscrollable;
+    margin: 20px;
+    padding: 20px;
+}
+
+.example {
+    position: relative;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    padding-left: 100px;
+}
+
+.project_title {
+    position: absolute;
+    top: 40px;
+    right: 168px;
+    color: rgb(204, 214, 246);
+    margin-right: 26px;
+}
+
+.box {
+    height: 150px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box2 {
+    background-color: #233554;
+}
+
+.box1 {
+    display: flex;
+    z-index: 1;
+    position: relative;
+    padding-left: 20px;
+    height: 320px;
+    width: 540px;
+    margin-right: 320px;
+}
+
+#projects_img {
+    height: 360px;
+    width: 800px;
+    background-color: rgb(13 110 253 / 25%);
+}
+
+.box2 {
+    display: flex;
+    position: absolute;
+    z-index: 10;
+    margin-left: 460px;
+    width: 400px;
+    height: 120px;
+    padding: 10px;
+}
+
+.ul_list {
+    display: flex;
+    margin-bottom: 80px;
+    padding: 0px;
+    position: relative;
+    margin-left: 200px;
+    margin-top: 300px;
+    display: inline;
+}
+
+.project-tech-list {
+    display: flex;
+    padding: 0px;
+    margin: auto;
+    width: 240px;
+}
+
+.li_list {
+    flex: 1;
+    z-index: 10;
+    display: contents;
+    width: 260px;
+    margin: auto;
+    padding: 5px;
+    color: #fff;
+}
+
+.project_git:hover {
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 30px #2196f3, 0 0 30px #2196f3;
+}
+
+.project_git {
+    fill: rgb(100, 255, 218);
+    stroke-width: 10;
+    stroke: rgb(100, 255, 218);
+    border-radius: 36px;
+    margin-top: 10px;
+}
+
+.svg_git {
+    display: flex;
+}
+
+#about_section {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+    padding: 100px;
+}
+
+.div_about {
+    padding-top: 800px;
+    flex: 1;
+    margin: 0 26% 0 26%;
+}
+
+h2 .contact_me {
+    color: rgb(204, 214, 246);
+}
+
+.email-link {
+    text-decoration: none;
+    margin: auto;
+    border-radius: 3px;
+    padding: 15px 30px;
+    border: 1px solid rgb(100, 255, 218);
+    color: #fff;
+    overflow: auto;
+    margin-bottom: 10px;
+}
+
+.footer {
+    margin-top: 20px;
+}
+
+.div_about {
+    padding-top: 770px;
+    flex: 1;
+    margin: -10px 24% 0 24%;
+    display: flex;
+    flex-direction: column;
+}
