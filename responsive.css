@@ -55,12 +55,15 @@
         }
         .project_title {
             top: -40px;
-            right: 110px;
+            right: 167px;
             font-size: 22px;
         }
         .p_colouroverride {
             color: #f8f9fa;
         }
+        /* .div_about {
+            padding-top: 250px;
+        } */
     }
     /* To write media query for specific device use beside one @media screen and (device-width: 761px) { */
     
@@ -121,6 +124,9 @@
         }
         .p_colouroverride {
             color: #f8f9fa;
+        }
+        .div_about {
+            padding-top: 250px;
         }
     }
     
@@ -190,7 +196,7 @@
         }
         #project_heading {
             font-size: 26px;
-            padding: 1030px 0px 5px 0;
+            padding: 1060px 0px 5px 0;
         }
         .example {
             display: flex;
@@ -232,7 +238,6 @@
             padding: 0px;
             margin: 0px;
             top: 1500px;
-            height: 100vh;
         }
         .div_about {
             display: flex;
@@ -246,5 +251,11 @@
         }
         .paragraph_padding {
             padding: 5px;
+        }
+    }
+    
+    @media screen and (max-width:360px) {
+        .div_about {
+            padding-top: 1010px;
         }
     }
