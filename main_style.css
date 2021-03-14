@@ -228,7 +228,7 @@ div.left {
 }
 
 #about_h {
-    padding: 140px 0 10px 160px;
+    padding: 140px 0 10px 235px;
 }
 
 .about_h2 {
@@ -247,7 +247,7 @@ div.left {
 
 #project_heading {
     color: rgb(204, 214, 246);
-    padding: 160px 0 10px 160px;
+    padding: 160px 0 10px 310px;
 }
 
 .main_proj_details {
@@ -365,7 +365,7 @@ div.left {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 200px;
+    margin-top: 650px;
     padding: 100px;
 }
 
@@ -400,4 +400,12 @@ h2 .contact_me {
     margin: -10px 24% 0 24%;
     display: flex;
     flex-direction: column;
+}
+
+.p_colouroverride {
+    font-size: 13px;
+    position: absolute;
+    color: #8892b0;
+    padding: 5px;
+    text-align: center;
 }
