@@ -224,9 +224,12 @@
             margin-left: 0px;
             background-color: rgb(13 110 253 / 25%);
         }
-        .project-tech-list {
-            margin-right: 205px;
+        .ul_list {
+            margin-left: 50px;
         }
+        /* .project-tech-list {
+             margin-right: 205px; 
+        } */
         .project_title {
             top: -40px;
             right: 202px;
