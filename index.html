@@ -8,13 +8,19 @@
     <link rel="stylesheet" href="responsive.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" defer>
 
+    <script src="terminal.js" defer></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous" defer></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&family=Yusei+Magic&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+
     <link rel="icon" href="favicon.ico" sizes="16x16">
 
     <style>
@@ -407,6 +413,35 @@
                     <a class="email-link " href="mailto:chaitanya9516@gmail.com " rel="noopener noreferrer " target="_blank " style="color: #ffff; text-decoration: none; ">Say Hello</a>
                 </div>
             </footer>
+
+            <div class="site_setting">
+
+                <svg class="terminal_svg" onclick="show_modal()" width="30px" height="30px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" class="terminal-version-btn" viewBox="0 0 31.586 31.586"
+                    xml:space="preserve">
+                        <title>Terminal Version</title>
+                       <g>
+                         <path d="M29.328,2.255H2.256C1.01,2.255,0,3.264,0,4.51v22.564c0,1.245,1.01,2.256,2.256,2.256h27.072   c1.244,0,2.258-1.012,2.258-2.256V4.51C31.586,3.264,30.572,2.255,29.328,2.255z M7.333,3.949c0.622,0,1.128,0.502,1.128,1.128   c0,0.623-0.506,1.125-1.128,1.125c-0.626,0-1.131-0.502-1.131-1.125C6.202,4.451,6.707,3.949,7.333,3.949z M3.947,3.949   c0.623,0,1.127,0.502,1.127,1.128c0,0.623-0.504,1.125-1.127,1.125c-0.624,0-1.129-0.502-1.129-1.125   C2.818,4.451,3.323,3.949,3.947,3.949z M29.328,27.075H2.256V7.92h27.072C29.328,7.92,29.328,27.075,29.328,27.075z"></path>
+                         <polygon points="12.645,12.556 5.4,9.243 5.4,10.84 11.003,13.235 11.003,13.266 5.4,15.66 5.4,17.256 12.645,13.943  "></polygon>
+                         <rect x="16.056" y="12.488" width="3.946" height="1.522"></rect>
+                        </g>
+                    </svg>
+
+            </div>
+
+            <div id="myModal" class="modal">
+                <div class="terminal">
+                    <span class="modal_close_btn" onclick="shut()" style="color: #c1c8ec;">×</span>
+                    <h3 class="terminal-user" style="color: rgb(100, 255, 218); font-size: 1.25rem; font-family: 'Noto Sans JP', sans-serif;">Welcome to my terminal tour!</h3>
+                    <ul style="color: #c1c8ec; font-family: 'Noto Sans JP', sans-serif;">
+                        <li>Type "help" to see list of commands available!</li>
+                        <li>Type "exit" to exit!</li>
+                    </ul>
+                    <div class="terminal_row">
+                        <span class="terminal_user" style="color: rgb(100, 255, 218); font-family: 'Noto Sans JP', sans-serif;">ask@Chay:~$ </span>
+                        <input type="text" class="terminal_input_command" style="color: #c1c8ec;" autocomplete="off" spellcheck="false" autocorrect="off">
+                    </div>
+                </div>
+            </div>
 
         </main>
 

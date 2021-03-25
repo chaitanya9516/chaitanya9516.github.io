@@ -38,7 +38,8 @@ body {
     padding: 100px 0 0 60px;
     font-size: 15px;
     color: rgb(100, 255, 218);
-    margin: 0px 0px 20px 3px;
+    /* margin: 0px 0px 20px 3px; */
+    margin: 0px 50px 20px 50px;
 }
 
 a {
@@ -174,7 +175,8 @@ div.left {
 
 .hero2 {
     padding: 40px 0 0 80px;
-    max-width: 500px;
+    margin: 0px 50px;
+    max-width: 720px;
 }
 
 .button_div {
@@ -408,4 +410,64 @@ h2 .contact_me {
     color: #8892b0;
     padding: 5px;
     text-align: center;
+}
+
+
+/* terminal css */
+
+.site_setting {
+    /* display: flex; */
+    /* flex-direction: row-reverse;
+    position: sticky; */
+    position: fixed;
+    bottom: 10%;
+    right: 1rem;
+    display: block;
+    z-index: 7;
+    height: 2.5rem;
+    cursor: pointer;
+}
+
+.terminal_svg {
+    fill: rgb(100, 255, 218);
+    stroke-width: 0px;
+    stroke: rgb(100, 255, 218);
+}
+
+.terminal {
+    overflow: auto;
+    margin: 10vh auto;
+    position: relative;
+    padding: 50px 20px;
+    background-color: #0e1019;
+    animation: modal 1s;
+    width: 80%;
+    height: calc(80% - 100px);
+    animation-fill-mode: forwards;
+    position: relative;
+    /* font-family: "Anonymous Pro"; */
+    border: .05rem solid var(--white);
+    border-radius: 4px;
+    opacity: .95;
+}
+
+.modal_close_btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.terminal_input_command {
+    flex-grow: 1;
+    background: 0 0;
+    border: none;
+    font: inherit;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
 }

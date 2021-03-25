@@ -126,7 +126,8 @@
             color: #f8f9fa;
         }
         .div_about {
-            padding-top: 250px;
+            margin: -10px 6% 0 6%;
+            padding-top: 660px;
         }
     }
     
@@ -143,12 +144,14 @@
         }
         .intro_sentence {
             padding: 40px 0 10px 2px;
+            margin: 0px;
             font-size: none;
         }
         .name,
         .hero,
         .hero2 {
             padding: 5px;
+            margin: 0px;
         }
         h1 {
             font-size: 8px;
@@ -227,9 +230,6 @@
         .ul_list {
             margin-left: 50px;
         }
-        /* .project-tech-list {
-             margin-right: 205px; 
-        } */
         .project_title {
             top: -40px;
             right: 202px;
@@ -254,6 +254,9 @@
         }
         .paragraph_padding {
             padding: 5px;
+        }
+        .div_about {
+            margin: -10px 6% 0 6%;
         }
     }
     
