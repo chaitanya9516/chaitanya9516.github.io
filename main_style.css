@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -473,9 +474,27 @@ select:focus {
     outline: none;
 }
 
-.terminal_colour {
+.terminal_user {
+    color: rgb(100, 255, 218);
+    font-size: 1.25rem;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.terminal_row {
     color: #c1c8ec;
 }
+
+
+/* .modal {
+    overflow-y: auto;
+    overflow: hidden;
+    /* to hide scrollbar 
+} */
+
+
+/* .terminal {
+    overflow: hidden;
+} */
 
 
 /* Some available commands are:

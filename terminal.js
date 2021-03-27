@@ -38,18 +38,33 @@ input.addEventListener("keydown", function(event) {
 
             let terminal = document.getElementById("terminal");
             let generation_p = document.createElement('p');
-            generation_p.classList.add('terminal_colour');
+            generation_p.classList.add('terminal_row');
+            generation_p.classList.add('terminal_log');
             generation_p.innerHTML = output;
             terminal.appendChild(generation_p);
-            //let terminal2 = document.getElementsByClassName("ter");
+
+            let generate_div = document.createElement('div');
+            generate_div.classList.add('terminal_row');
+            generate_div.classList.add('terminal_log');
 
 
 
+            let generation_p2 = document.createElement('p');
+            generation_p2.classList.add('terminal_row');
+            generation_p2.classList.add('terminal_log');
 
-            // terminal.innerHTML = data;
-            // let div_ter = document.createElement("div");
-            // div_ter.setAttribute("class", div_ter);
-            // div_ter.innerHTML = generation_p;
+            let generate_span = document.createElement('span');
+            generate_span.innerHTML = 'ask@Chay:~$ ';
+            generate_span.style.color = 'rgb(100, 255, 218)';
+            terminal.appendChild(generate_span);
+
+            let generate_input = document.createElement('input');
+            generate_input.classList.add('terminal_input_command');
+            generate_input.style.color = '#c1c8ec';
+            // generate_input.setAttribute('onclick', );
+            generation_p2.appendChild(generate_span);
+            generation_p2.appendChild(generate_input);
+            terminal.appendChild(generation_p2);
 
 
 
