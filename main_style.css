@@ -471,3 +471,15 @@ textarea:focus,
 select:focus {
     outline: none;
 }
+
+
+/* Some available commands are:
+about ......... About me
+clear ......... Clear terminal log
+exit .......... Exit terminal session
+help .......... Showing available commands
+links ......... Social media links
+theme ......... Change theme of terminal
+articles ...... Recent articles
+projects ...... My pinned projects on GitHub
+Besides, there are some hidden feature, try to find it out! */
