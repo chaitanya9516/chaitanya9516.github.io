@@ -464,12 +464,17 @@ h2 .contact_me {
     background: 0 0;
     border: none;
     font: inherit;
+    color: inherit;
 }
 
 input:focus,
 textarea:focus,
 select:focus {
     outline: none;
+}
+
+.terminal_colour {
+    color: #c1c8ec;
 }
 
 

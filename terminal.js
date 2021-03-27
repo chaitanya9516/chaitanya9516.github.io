@@ -26,22 +26,26 @@ input.addEventListener("keydown", function(event) {
             let output;
 
             output = `<span>Some available commands are:</span><ul>
-            <li>about ......... About me</li>
-            <li>clear ......... Clear terminal log</li>
-            <li>exit .......... Exit terminal session</li>
-            <li>help .......... Showing available commands</li>
-            <li>links ......... Social media links</li>
-            <li>theme ......... Change theme of terminal</li>
-            <li>articles ...... Recent articles</li>
-            <li>projects ...... My pinned projects on GitHub</li>
+            <li>about ............ About me</li>
+            <li>clear ............ Clear terminal log</li>
+            <li>exit ............. Exit terminal session</li>
+            <li>help ............. Showing available commands</li>
+            <li>links ............ Social media links</li>
+            <li>theme ............ Change theme of terminal</li>
+            <li>articles ......... Recent articles</li>
+            <li>projects ......... My pinned projects on GitHub</li>
             </ul><span>Besides, there are some hidden feature, try to find it out!</span>`
 
-            var terminal = document.getElementsByClassName("terminal");
+            let terminal = document.getElementById("terminal");
+            let generation_p = document.createElement('p');
+            generation_p.classList.add('terminal_colour');
+            generation_p.innerHTML = output;
+            terminal.appendChild(generation_p);
+            //let terminal2 = document.getElementsByClassName("ter");
 
 
 
-            // var generation_p = document.createElement("p");
-            // let data = generation_p.innerHTML = output;
+
             // terminal.innerHTML = data;
             // let div_ter = document.createElement("div");
             // div_ter.setAttribute("class", div_ter);
