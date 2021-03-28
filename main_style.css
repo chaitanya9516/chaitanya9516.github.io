@@ -435,6 +435,18 @@ h2 .contact_me {
     stroke: rgb(100, 255, 218);
 }
 
+.terminal_user {
+    color: rgb(100, 255, 218);
+    font-size: 1.25rem;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.terminal_row,
+.terminal_input_command,
+.modal_close_btn {
+    color: #c1c8ec;
+}
+
 .terminal {
     overflow: auto;
     margin: 10vh auto;
@@ -456,7 +468,7 @@ h2 .contact_me {
     position: absolute;
     right: 20px;
     top: 20px;
-    font-size: 3rem;
+    font-size: 2rem;
     cursor: pointer;
 }
 
@@ -472,16 +484,6 @@ input:focus,
 textarea:focus,
 select:focus {
     outline: none;
-}
-
-.terminal_user {
-    color: rgb(100, 255, 218);
-    font-size: 1.25rem;
-    font-family: 'Noto Sans JP', sans-serif;
-}
-
-.terminal_row {
-    color: #c1c8ec;
 }
 
 
