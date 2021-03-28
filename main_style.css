@@ -427,6 +427,7 @@ h2 .contact_me {
     z-index: 7;
     height: 2.5rem;
     cursor: pointer;
+    z-index: 10;
 }
 
 .terminal_svg {

@@ -95,7 +95,7 @@
             flex: 1;
             margin-right: 0px;
             /* height: 320px;
-        width: 420px; */
+            width: 420px; */
             height: 380px;
             width: 550px;
             padding-left: 0px;
@@ -109,7 +109,7 @@
             display: flex;
             flex: 1;
             /* height: 320px;
-        width: 420px; */
+            width: 420px; */
             height: 380px;
             width: 550px;
             margin-left: 0px;
@@ -117,7 +117,7 @@
         }
         .project_title {
             /* top: -95px;
-        right: 150px; */
+            right: 150px; */
             top: -40px;
             right: 110px;
             font-size: 22px;
@@ -231,9 +231,11 @@
             margin-left: 50px;
         }
         .project_title {
-            top: -40px;
-            right: 202px;
+            top: 0px;
+            right: 180px;
             font-size: 22px;
+            position: absolute;
+            z-index: 2;
         }
         /* section4 */
         #about_section {
