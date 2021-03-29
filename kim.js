@@ -78,7 +78,7 @@ document.querySelector(".terminal-version-btn").addEventListener("click", () => 
             }else if(input === "articles"){
                 output = `<ul>${ARTICLES.map(article => `<li><a href = "${article.url}" target="_blank" rel="noopener">${article.title}</a></li>`).join('')}</ul>`
             }else if(input === "github"){
-                let github = window.open('https://github.com/kimlimjustin', "_blank");
+                let github = window.open('https://github.com/chaitanya9516', "_blank");
                 github.focus()
                 output = ""
             }else if(input === "https://kimlim.net" || input === "kimlim.net" || input === "http://kimlim.net"){
@@ -126,6 +126,9 @@ document.querySelector(".terminal-version-btn").addEventListener("click", () => 
                 repo.focus()
                 output = ""
             }
+            
+
+
             RETURN_VALUE(input, output)
 
             if(input === "clear" || input === "cls") REMOVE_LOG()

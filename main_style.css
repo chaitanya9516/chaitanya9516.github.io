@@ -438,8 +438,9 @@ h2 .contact_me {
 
 .terminal_user {
     color: rgb(100, 255, 218);
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-family: 'Noto Sans JP', sans-serif;
+    padding-right: 2px;
 }
 
 .terminal_row,

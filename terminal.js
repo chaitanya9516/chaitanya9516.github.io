@@ -1,6 +1,7 @@
 var modal = document.getElementById("myModal");
 var input = document.querySelector(".terminal_input_command");
 const terminal = document.querySelector(".terminal");
+var local_terminal_data = localStorage.getItem("input_val");
 
 function show_modal() {
     modal.style.display = "block";
@@ -15,6 +16,15 @@ window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
+}
+
+const Remove_inputs = () => {
+    const Log = terminal.querySelectorAll(".terminal_row");
+    Log.forEach(log_data => {
+        if (!log_data.contains(input)) {
+            terminal.removeChild(log_data)
+        }
+    })
 }
 
 function build_elements(output_val) {
@@ -53,11 +63,39 @@ input.addEventListener("keydown", function(event) {
             <li>projects ......... My pinned projects on GitHub</li>
             </ul><span>Besides, there are some hidden feature, try to find it out!</span>`
 
+        } else if (terminal_val === "links") {
+            output = `<ul>
+                <li><a href="https://instagram.com/chaitanya9516" target="_blank" rel="noopener">Instagram</a></li>
+                <li><a href="https://github.com/chaitanya9516" target="_blank" rel="noopener">GitHub</a></li>
+                <li><a href="mailto:chaitanya9516@gmail.com" target="_blank" rel="noopener">Email</a></li>
+                </ul>`
         } else if (terminal_val === "about") {
-            output = "Hello, I' m Justin Maximillian Kimlim from Indonesia, a 15 y.o.junior high school student with hobbies of computer science, programming and science fiction.I enjoy making projects or even website clone.";
+            output = "An experienced Developing enthusiast based in Hyderabad , India with an obsession of designing and building magnificent websites by connecting the various dots in between...";
+        } else if (terminal_val === "github") {
+            let github = window.open('https://github.com/chaitanya9516', "_blank");
+            github.focus()
+            output = ""
+        } else if (terminal_val === "https://kimlim.net" || terminal_val === "kimlim.net" || terminal_val === "http://kimlim.net") {
+            output = `This website is designed and built by chaitanya using HTML, CSS and Vanilla JavaScript and was inspired by several websites over the internet. Find out the repo of this website <a href = "https://github.com/chaitanya9516/chaitanya9516.github.io" target="_blank" rel="noopener">here.</a>`
+        } else if (terminal_val === "hello" || terminal_val === "hi") {
+            window.open('mailto:chaitanya9516@gmail.com?Subject=Hello');
+            output = `Say hello to me <a href="mailto:kimlimjustin@gmail.com?Subject=Hello">here!</a>`;
+        } else if (terminal_val === "refresh") {
+            location.reload()
+            output = ""
+        } else if (terminal_val === "whoami") {
+            output = "You are human when you type this command :)"
+        } else if (terminal_val === "date") {
+            output = new Date()
         }
+        //else {
+        //     " ${local_terminal_data} is not recognized as a command."
+        // }
+
 
         build_elements(output);
+
+        if (terminal_val === "clear" || input === "cls") Remove_inputs()
         input.value = "";
     }
 });
