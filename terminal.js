@@ -61,4 +61,3 @@ input.addEventListener("keydown", function(event) {
         input.value = "";
     }
 });
-// }
