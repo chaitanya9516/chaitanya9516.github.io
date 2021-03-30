@@ -101,7 +101,7 @@ input.addEventListener("keydown", function(event) {
         } else if (terminal_val === "date") {
             output = new Date()
         } else if (terminal_val === "sushu") {
-            output = ""
+            output = "I LOVE U BABY.YOU ARE THE MOST BEAUTIFUL PERSON I HAVE MET UNTIL NOW AND GORGEOUS THAN NIAGARA 😆😆"
         } else {
             output = `${terminal_val} is not recognized as language code.`
         }
