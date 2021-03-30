@@ -12,12 +12,6 @@ function shut() {
     modal.style.display = "none";
 }
 
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-
 const Remove_inputs = () => {
     const Log = terminal.querySelectorAll(".terminal_row");
     Log.forEach(log_data => {
@@ -25,6 +19,25 @@ const Remove_inputs = () => {
             terminal.removeChild(log_data)
         }
     })
+}
+
+const EXIT = () => {
+    Remove_inputs();
+    input.removeEventListener("change", input)
+    modal.style.display = "none";
+}
+
+modal.querySelector(".modal_close_btn").addEventListener("click", () => {
+    EXIT()
+})
+
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        Remove_inputs();
+        modal.style.display = "none";
+        Remove_inputs();
+    }
 }
 
 function build_elements(output_val) {
@@ -87,15 +100,24 @@ input.addEventListener("keydown", function(event) {
             output = "You are human when you type this command :)"
         } else if (terminal_val === "date") {
             output = new Date()
+        } else if (terminal_val === "sushu") {
+            output = ""
+        } else {
+            output = `${terminal_val} is not recognized as language code.`
         }
-        //else {
-        //     " ${local_terminal_data} is not recognized as a command."
-        // }
 
 
         build_elements(output);
 
-        if (terminal_val === "clear" || input === "cls") Remove_inputs()
+        if (terminal_val === "clear" || input === "cls") {
+            Remove_inputs();
+        }
+        if (terminal_val === "exit") {
+            EXIT();
+
+        }
+
+
         input.value = "";
     }
 });
