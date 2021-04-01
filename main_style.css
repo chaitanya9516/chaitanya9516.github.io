@@ -416,10 +416,7 @@ h2 .contact_me {
 
 /* terminal css */
 
-.site_setting {
-    /* display: flex; */
-    /* flex-direction: row-reverse;
-    position: sticky; */
+.div_svg {
     position: fixed;
     bottom: 10%;
     right: 1rem;
@@ -494,27 +491,3 @@ textarea:focus,
 select:focus {
     outline: none;
 }
-
-
-/* .modal {
-    overflow-y: auto;
-    overflow: hidden;
-    /* to hide scrollbar 
-} */
-
-
-/* .terminal {
-    overflow: hidden;
-} */
-
-
-/* Some available commands are:
-about ......... About me
-clear ......... Clear terminal log
-exit .......... Exit terminal session
-help .......... Showing available commands
-links ......... Social media links
-theme ......... Change theme of terminal
-articles ...... Recent articles
-projects ...... My pinned projects on GitHub
-Besides, there are some hidden feature, try to find it out! */
