@@ -273,7 +273,7 @@
         }
     }
     
-    @media screen and (max-width:1024px) {
+    @media screen and (max-width:1366px) {
         .div_about {
             padding: 40px;
         }
