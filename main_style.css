@@ -491,3 +491,7 @@ textarea:focus,
 select:focus {
     outline: none;
 }
+
+img {
+    border-radius: 5px;
+}
