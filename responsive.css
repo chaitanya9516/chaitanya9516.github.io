@@ -127,7 +127,7 @@
         }
         .div_about {
             margin: -10px 6% 0 6%;
-            padding-top: 720px;
+            /* padding-top: 720px; */
         }
     }
     
@@ -246,12 +246,13 @@
             display: flex;
             padding: 0px;
             margin: 0px;
-            top: 1500px;
+            top: 1826px;
+            height: 0vh;
         }
         .div_about {
             display: flex;
             flex: 1;
-            padding-top: 640px;
+            /* padding-top: 640px; */
             margin: 26px;
         }
         .p_colouroverride {

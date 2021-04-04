@@ -243,7 +243,7 @@ div.left {
 }
 
 .project_sec {
-    height: 90vh;
+    min-height: 90vh;
     display: flex;
     flex-direction: column;
 }
@@ -368,12 +368,13 @@ div.left {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 650px;
-    padding: 100px;
+    flex: 1;
+    /* margin-top: 650px; */
+    /* padding: 100px; */
 }
 
 .div_about {
-    padding-top: 800px;
+    /* padding-top: 800px; */
     flex: 1;
     margin: 0 26% 0 26%;
 }
@@ -397,12 +398,26 @@ h2 .contact_me {
     margin-top: 20px;
 }
 
+#about_section {
+    padding: 8px;
+    min-height: 60vh;
+    position: relative;
+    height: 100vh;
+    /* height: auto; */
+}
+
 .div_about {
-    padding-top: 770px;
+    /* padding-top: 770px; */
     flex: 1;
     margin: -10px 24% 0 24%;
     display: flex;
     flex-direction: column;
+    top: 0;
+    bottom: 0;
+}
+
+.title {
+    margin-top: 20px;
 }
 
 .p_colouroverride {
