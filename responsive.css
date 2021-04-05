@@ -61,9 +61,6 @@
         .p_colouroverride {
             color: #f8f9fa;
         }
-        /* .div_about {
-            padding-top: 250px;
-        } */
     }
     /* To write media query for specific device use beside one @media screen and (device-width: 761px) { */
     
@@ -105,19 +102,14 @@
             width: 550px;
         }
         .box2 {
-            /* display: grid; */
             display: flex;
             flex: 1;
-            /* height: 320px;
-            width: 420px; */
             height: 380px;
             width: 550px;
             margin-left: 0px;
             background-color: rgb(13 110 253 / 25%);
         }
         .project_title {
-            /* top: -95px;
-            right: 150px; */
             top: -40px;
             right: 110px;
             font-size: 22px;
@@ -125,9 +117,15 @@
         .p_colouroverride {
             color: #f8f9fa;
         }
+        #about_section {
+            max-height: 300px;
+        }
         .div_about {
             margin: -10px 6% 0 6%;
-            /* padding-top: 720px; */
+            padding: 400px 0px 0px 0px;
+        }
+        .u {
+            margin-top: 0px;
         }
     }
     
@@ -248,11 +246,11 @@
             margin: 0px;
             top: 1826px;
             height: 0vh;
+            flex-direction: column;
         }
         .div_about {
             display: flex;
             flex: 1;
-            /* padding-top: 640px; */
             margin: 26px;
         }
         .p_colouroverride {
@@ -266,15 +264,13 @@
         .div_about {
             margin: -10px 6% 0 6%;
         }
+        .u {
+            margin-top: 0px;
+        }
     }
     
     @media screen and (max-width:360px) {
         .div_about {
-            padding-top: 1010px;
+            padding-top: 330px;
         }
     }
-    /* @media screen and (max-width:1024px) {
-        .div_about {
-            padding: 40px;
-        }
-    } */

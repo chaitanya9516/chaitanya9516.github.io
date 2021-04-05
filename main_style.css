@@ -16,13 +16,6 @@ body {
     background-color: #112240;
 }
 
-
-/* section {
-    padding: 0 100PX;
-    height: 100vh;
-    display: flex;
-} */
-
 .intro {
     padding: 0px 0 0 60px;
     font-size: 18px;
@@ -39,7 +32,6 @@ body {
     padding: 100px 0 0 60px;
     font-size: 15px;
     color: rgb(100, 255, 218);
-    /* margin: 0px 0px 20px 3px; */
     margin: 0px 50px 20px 50px;
 }
 
@@ -57,7 +49,6 @@ a {
 
 ul {
     list-style-type: none;
-    /* padding-top: 250px; */
 }
 
 ul .social_StyledList .fade-enter-done {
@@ -118,7 +109,6 @@ ul .social_StyledList .fade-enter-done {
 
 div.email {
     margin: 0px;
-    /* padding: 0px; */
 }
 
 .right {
@@ -218,7 +208,6 @@ div.left {
 .about_StyledText {
     display: flex;
     width: 60%;
-    /* border: solid 1px #000; */
     padding-left: 80px;
     max-width: 500px;
 }
@@ -226,7 +215,6 @@ div.left {
 .about_StyledPic {
     display: flex;
     width: 40%;
-    /* border: solid 1px #000; */
     padding-right: 80px;
 }
 
@@ -369,12 +357,9 @@ div.left {
     align-items: center;
     justify-content: center;
     flex: 1;
-    /* margin-top: 650px; */
-    /* padding: 100px; */
 }
 
 .div_about {
-    /* padding-top: 800px; */
     flex: 1;
     margin: 0 26% 0 26%;
 }
@@ -403,17 +388,15 @@ h2 .contact_me {
     min-height: 60vh;
     position: relative;
     height: 100vh;
-    /* height: auto; */
+    flex-direction: column;
 }
 
 .div_about {
-    /* padding-top: 770px; */
     flex: 1;
     margin: -10px 24% 0 24%;
     display: flex;
     flex-direction: column;
-    top: 0;
-    bottom: 0;
+    padding: 150px 0px 0px 0px;
 }
 
 .title {
@@ -426,6 +409,17 @@ h2 .contact_me {
     color: #8892b0;
     padding: 5px;
     text-align: center;
+}
+
+.u {
+    flex-direction: column;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #8892b0;
+    margin-top: 150px;
+    padding-top: 40px;
 }
 
 
