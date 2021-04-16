@@ -277,9 +277,10 @@ div.left {
     justify-content: center;
 }
 
-.box2 {
+
+/* .box2 {
     background-color: #233554;
-}
+} */
 
 .box1 {
     display: flex;
@@ -305,6 +306,8 @@ div.left {
     width: 400px;
     height: 120px;
     padding: 10px;
+    background-color: #233554;
+    border-radius: 4px;
 }
 
 .ul_list {

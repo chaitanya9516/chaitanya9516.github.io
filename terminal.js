@@ -72,7 +72,6 @@ input.addEventListener("keydown", function(event) {
             <li>help ............. Showing available commands</li>
             <li>links ............ Social media links</li>
             <li>theme ............ Change theme of terminal</li>
-            <li>articles ......... Recent articles</li>
             <li>projects ......... My pinned projects on GitHub</li>
             </ul><span>Besides, there are some hidden feature, try to find it out!</span>`
 
@@ -100,8 +99,13 @@ input.addEventListener("keydown", function(event) {
             output = "You are human when you type this command :)"
         } else if (terminal_val === "date") {
             output = new Date()
-        } else if (terminal_val === "sushu") {
-            output = "I LOVE U BABY.YOU ARE THE MOST BEAUTIFUL PERSON, I HAVE EVER MET AND GORGEOUS THAN NIAGARA FALLS❤💑"
+        } else if (terminal_val === "projects") {
+            output = `<ul>
+            <li><a href="https://github.com/chaitanya9516/protecttext" target="_blank" rel="noopener">ProtectText</a></li>
+            <li><a href="https://github.com/chaitanya9516/IPLogger" target="_blank" rel="noopener">Cutby</a></li>
+            <li><a href="https://github.com/chaitanya9516/selenium-c-bot" target="_blank" rel="noopener">Lazyscript</a></li>
+            <li><a href="https://github.com/chaitanya9516/Password-Generator-using-js" target="_blank" rel="noopener">PasswordGenerator</a></li>
+            </ul>`
         } else {
             output = `${terminal_val} is not recognized as language code.`
         }
