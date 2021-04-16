@@ -197,7 +197,7 @@
         }
         #project_heading {
             font-size: 26px;
-            padding: 1060px 0px 5px 0;
+            padding: 1084px 0px 5px 0;
         }
         .example {
             display: flex;
@@ -269,7 +269,7 @@
         }
     }
     
-    @media screen and (max-width:360px) {
+    @media only screen and (min-width: 360px) {
         .div_about {
             padding-top: 330px;
         }
