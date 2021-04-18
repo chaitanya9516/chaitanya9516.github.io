@@ -63,7 +63,7 @@
             color: #f8f9fa;
         }
     }
-    /* To write media query for specific device use beside one @media screen and (device-width: 761px) { */
+    /* To write a media query for specific device use beside one @media screen and (device-width: 761px) { */
     
     @media screen and (max-width:768px) {
         div.right {
@@ -270,7 +270,7 @@
         }
     }
     
-    @media only screen and (min-width: 360px) {
+    @media screen and (max-width: 360px) {
         .div_about {
             padding-top: 330px;
         }
