@@ -215,7 +215,8 @@ div.left {
 .about_StyledPic {
     display: flex;
     width: 40%;
-    padding-right: 80px;
+    margin-left: 10px;
+    padding-right: 20px;
 }
 
 #about_h {
