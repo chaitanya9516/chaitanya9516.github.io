@@ -239,7 +239,8 @@ div.left {
 
 #project_heading {
     color: rgb(204, 214, 246);
-    padding: 160px 0 10px 310px;
+    padding: 40px 0 10px 310px;
+    margin-bottom: 20px;
 }
 
 .main_proj_details {
@@ -363,9 +364,15 @@ div.left {
     flex: 1;
 }
 
+
+/* 
 .div_about {
     flex: 1;
     margin: 0 26% 0 26%;
+} */
+
+.contact_me {
+    margin: 20px;
 }
 
 h2 .contact_me {
