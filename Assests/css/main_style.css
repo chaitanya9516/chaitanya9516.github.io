@@ -372,7 +372,7 @@ div.left {
 } */
 
 .contact_me {
-    margin: 20px;
+    margin: 20px 20px 0px 20px;
 }
 
 h2 .contact_me {
@@ -411,7 +411,7 @@ h2 .contact_me {
 }
 
 .title {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .p_colouroverride {

@@ -59,7 +59,8 @@ function build_elements(output_val) {
 input.addEventListener("keydown", function(event) {
 
     if (event.key === "Enter") {
-        var terminal_val = input.value;
+        var x = input.value;
+        let terminal_val = x.toLowerCase();
         localStorage.setItem("input_val", terminal_val);
         var output;
         //alert(terminal_val);
