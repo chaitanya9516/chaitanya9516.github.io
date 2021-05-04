@@ -49,7 +49,7 @@ function build_elements(output_val) {
     let lastInputElement = document.createElement('p');
     lastInputElement.classList.add('terminal_row');
     let local_terminal_data = localStorage.getItem("input_val");
-    lastInputElement.innerHTML = `<span class="terminal_user">ask@justin:~$</span><span class="terminal_log">${local_terminal_data}</span>`
+    lastInputElement.innerHTML = `<span class="terminal_user">ask@chay:~$</span><span class="terminal_log">${local_terminal_data}</span>`
     terminal.insertBefore(outputElement, input.parentNode);
     terminal.insertBefore(lastInputElement, outputElement);
 
@@ -88,11 +88,11 @@ input.addEventListener("keydown", function(event) {
             let github = window.open('https://github.com/chaitanya9516', "_blank");
             github.focus()
             output = ""
-        } else if (terminal_val === "https://kimlim.net" || terminal_val === "kimlim.net" || terminal_val === "http://kimlim.net") {
+        } else if (terminal_val === "https://chaiitanya.in" || terminal_val === "chaiitanya.invv" || terminal_val === "http://chaiitanya.in") {
             output = `This website is designed and built by chaitanya using HTML, CSS and Vanilla JavaScript and was inspired by several websites over the internet. Find out the repo of this website <a href = "https://github.com/chaitanya9516/chaitanya9516.github.io" target="_blank" rel="noopener">here.</a>`
         } else if (terminal_val === "hello" || terminal_val === "hi") {
             window.open('mailto:chaitanya9516@gmail.com?Subject=Hello');
-            output = `Say hello to me <a href="mailto:kimlimjustin@gmail.com?Subject=Hello">here!</a>`;
+            output = `Say hello to me <a href="mailto:chaitanya9516@gmail.com?Subject=Hello">here!</a>`;
         } else if (terminal_val === "refresh") {
             location.reload()
             output = ""
